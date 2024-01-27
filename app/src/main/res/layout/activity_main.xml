@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/HeadBlock"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#202020"/>
+
+    <LinearLayout
+        android:id="@+id/LeftBlock"
+        android:layout_width="50dp"
+        android:layout_height="145dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="80dp"
+        android:background="#202020"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/RightBlock"
+        android:layout_width="50dp"
+        android:layout_height="145dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="80dp"
+        android:background="#202020"
+        android:orientation="horizontal"/>
+
+    <FrameLayout
+        android:id="@+id/Console"
+        android:layout_width="320dp"
+        android:layout_height="145dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="215dp"
+        android:background="#7EA36F"
+        android:textSize="24sp">
+
+        <TextView
+            android:id="@+id/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="3*3/8+66*4/7-42*2/25"
+            android:textSize="30sp" />
+    </FrameLayout>
+    
+    <FrameLayout
+        android:id="@+id/BodyBlock"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:background="#202020"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <GridLayout
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_margin="50dp"
+            android:columnCount="3"
+            android:rowCount="3"
+            >
+
+            <Button>
+
+            </Button>
+
+            <Button
+                android:layout_row="1"
+                android:layout_column="0">
+
+            </Button>
+
+            <Button
+                android:layout_row="2"
+                android:layout_column="0">
+
+            </Button>
+
+        </GridLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
+
